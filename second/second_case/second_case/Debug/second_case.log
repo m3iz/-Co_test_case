@@ -1,0 +1,5 @@
+﻿  Source.cpp
+C:\Users\Explo\source\repos\test_case\second\second_case\second_case\Source.cpp(45,10): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+C:\Users\Explo\source\repos\test_case\second\second_case\second_case\Source.cpp(68,13): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Explo\source\repos\test_case\second\second_case\second_case\Source.cpp(105,66): warning C4305: аргумент: усечение из "double" в "float"
+  second_case.vcxproj -> C:\Users\Explo\source\repos\test_case\second\second_case\Debug\second_case.exe

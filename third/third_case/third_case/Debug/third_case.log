@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Users\Explo\source\repos\test_case\third\third_case\third_case\Source.cpp(72,12): warning C4018: <=: несоответствие типов со знаком и без знака
+C:\Users\Explo\source\repos\test_case\third\third_case\third_case\Source.cpp(101,12): warning C4018: <: несоответствие типов со знаком и без знака
+  third_case.vcxproj -> C:\Users\Explo\source\repos\test_case\third\third_case\Debug\third_case.exe
