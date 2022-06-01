@@ -12,7 +12,6 @@ public:
 		x = px;
 		y = py;
 	};
-	~Point() {};
 	float getCordx()
 	{
 		return x;
@@ -79,8 +78,8 @@ private:
 
 void moveMan(Manipulator* m1, Manipulator* m2, Point p1)
 {
-	class Vec vec1(p1.getCordx() - m1->getCordx(), p1.getCordy() - m1->getCordy());
-	class Vec vec2(p1.getCordx() - m2->getCordx(), p1.getCordy() - m2->getCordy());
+	Vec vec1(p1.getCordx() - m1->getCordx(), p1.getCordy() - m1->getCordy());
+	Vec vec2(p1.getCordx() - m2->getCordx(), p1.getCordy() - m2->getCordy());
 
 	if (vec2.getLen() > vec1.getLen())
 	{
@@ -108,10 +107,10 @@ int main()
 	for (auto a : arr)
 		moveMan(m1, m2, a);
 
-	cout << "Ïåðâûé ìàíèïóëÿòîð: ";
+	cout << "ÃÃ¥Ã°Ã¢Ã»Ã© Ã¬Ã Ã­Ã¨Ã¯Ã³Ã«Ã¿Ã²Ã®Ã°: ";
 	m1->printResult();
 
-	cout << "\nÂòîðîé ìàíèïóëÿòîð: ";
+	cout << "\nÃ‚Ã²Ã®Ã°Ã®Ã© Ã¬Ã Ã­Ã¨Ã¯Ã³Ã«Ã¿Ã²Ã®Ã°: ";
 	m2->printResult();
 
 	return 0;
