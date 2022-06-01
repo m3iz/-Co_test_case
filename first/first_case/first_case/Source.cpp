@@ -11,7 +11,6 @@ public:
 		x = px;
 		y = py;
 	};
-	~Point() {};
 	float getCordx()
 	{
 		return x;
@@ -61,16 +60,16 @@ private:
 
 int main()
 {
-	//Входные данные
-	class Manipulator m1(15, 20, 10);
-	class Manipulator m2(20, 30, 5);
-	class Point p1(15, 23);
+	//Г‚ГµГ®Г¤Г­Г»ГҐ Г¤Г Г­Г­Г»ГҐ
+	Manipulator m1(15, 20, 10);
+	Manipulator m2(20, 30, 5);
+	Point p1(15, 23);
 
-	//Создаем вектора от инструментов до точки
-	class Vec vec1(p1.getCordx() - m1.getCordx(), p1.getCordy() - m1.getCordy());
-	class Vec vec2(p1.getCordx() - m2.getCordx(), p1.getCordy() - m2.getCordy());
+	//Г‘Г®Г§Г¤Г ГҐГ¬ ГўГҐГЄГІГ®Г°Г  Г®ГІ ГЁГ­Г±ГІГ°ГіГ¬ГҐГ­ГІГ®Гў Г¤Г® ГІГ®Г·ГЄГЁ
+	Vec vec1(p1.getCordx() - m1.getCordx(), p1.getCordy() - m1.getCordy());
+	Vec vec2(p1.getCordx() - m2.getCordx(), p1.getCordy() - m2.getCordy());
 
-	//Учитывая радуисы манипуляторов, выбираем наилучий манипулятор
+	//Г“Г·ГЁГІГ»ГўГ Гї Г°Г Г¤ГіГЁГ±Г» Г¬Г Г­ГЁГЇГіГ«ГїГІГ®Г°Г®Гў, ГўГ»ГЎГЁГ°Г ГҐГ¬ Г­Г ГЁГ«ГіГ·ГЁГ© Г¬Г Г­ГЁГЇГіГ«ГїГІГ®Г°
 	if (vec1.getLen() <= m1.getRadius() && vec1.getLen() <= vec2.getLen())cout << "First manipulator\n";
 	else if (vec2.getLen() <= m2.getRadius() && vec2.getLen() <= vec1.getLen()) cout << "Second manipulator\n";
 	else cout << "OUT OF RANGE\n";
