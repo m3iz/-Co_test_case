@@ -16,7 +16,6 @@ public:
 		y = py;
 		z = pz;
 	};
-	~Point() {};
 	float getCordx()
 	{
 		return x;
